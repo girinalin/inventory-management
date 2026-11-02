@@ -473,6 +473,35 @@ src/
 └── main.js         # App entry
 ```
 
+### Comments and Documentation
+
+**Always document non-obvious logic changes with comments.**
+
+Non-obvious logic includes:
+- Conditional logic with hidden constraints
+- Workarounds for specific bugs or platform issues
+- Subtle patterns that might not be immediately clear
+- Business logic that differs from what the code alone suggests
+
+**Don't comment the obvious:**
+- `const total = sum()` — the code is clear
+- Loop iteration — self-explanatory
+
+**Do comment the non-obvious:**
+- Why a specific condition is checked (constraint or edge case)
+- Why a workaround is needed (reference the issue or limitation)
+- Why one approach was chosen over another
+
+**Example:**
+```javascript
+// Only validate dates that aren't empty strings to avoid incorrect
+// month calculations in reports (see: issue #142)
+const date = new Date(order.date)
+if (order.date && !isNaN(date.getTime())) {
+  const month = date.getMonth()
+}
+```
+
 ## Quick Reference
 
 **Start dev server:** `npm run dev`

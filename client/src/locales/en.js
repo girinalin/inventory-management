@@ -6,8 +6,17 @@ export default {
     orders: 'Orders',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    restocking: 'Restocking',
+    reports: 'Reports',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
+  },
+
+  // Sidebar
+  sidebar: {
+    toggle: 'Toggle navigation menu',
+    collapse: 'Collapse sidebar',
+    expand: 'Expand sidebar'
   },
 
   // Dashboard
@@ -126,7 +135,8 @@ export default {
       status: 'Status',
       expectedDelivery: 'Expected Delivery',
       actualDelivery: 'Actual Delivery'
-    }
+    },
+    submittedOrders: 'Submitted Restocking Orders'
   },
 
   // Finance/Spending
@@ -185,6 +195,31 @@ export default {
       change: 'Change',
       trend: 'Trend',
       period: 'Period'
+    }
+  },
+
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Generate restocking recommendations and place orders within budget',
+    setBudget: 'Set Budget',
+    recommendedItems: 'Recommended Items',
+    totalCost: 'Total Cost',
+    remainingBudget: 'Remaining Budget',
+    recommendations: 'Recommendations',
+    placeOrder: 'Place Order',
+    placingOrder: 'Placing Order...',
+    orderSuccess: 'Order {orderNumber} placed successfully!',
+    days: 'days',
+    table: {
+      sku: 'SKU',
+      name: 'Name',
+      category: 'Category',
+      demandGap: 'Demand Gap',
+      quantity: 'Quantity',
+      unitCost: 'Unit Cost',
+      lineTotal: 'Line Total',
+      leadTime: 'Lead Time'
     }
   },
 
@@ -309,6 +344,31 @@ export default {
     english: 'English',
     japanese: 'Japanese',
     selectLanguage: 'Select Language'
+  },
+
+  // Purchase order modal
+  purchaseOrder: {
+    createTitle: 'Create Purchase Order',
+    viewTitle: 'Purchase Order',
+    supplierName: 'Supplier Name',
+    quantity: 'Quantity',
+    unitCost: 'Unit Cost',
+    expectedDelivery: 'Expected Delivery Date',
+    notes: 'Notes (optional)',
+    submit: 'Create Purchase Order',
+    submitting: 'Creating...',
+    poId: 'PO ID',
+    total: 'Total',
+    status: 'Status',
+    createdAt: 'Created',
+    noNotes: 'None',
+    notFound: 'No purchase order found',
+    alreadyExists: 'A purchase order already exists for this item',
+    createFailed: 'Failed to create purchase order',
+    loadFailed: 'Failed to load purchase order',
+    required: 'This field is required',
+    invalidQuantity: 'Enter a whole number greater than 0',
+    invalidCost: 'Enter a number of 0 or more'
   },
 
   // Common
